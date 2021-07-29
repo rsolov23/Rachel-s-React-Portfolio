@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Alegreya";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  height: 50px;
+  width: 100%;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  overflow: auto;
+  height: auto;
+}
+.left-links {
+  flex: 1 1 200px;
+}
+.links {
+  display: inline-block;
+  text-align: center;
+  padding: 14px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bolder;
+}
