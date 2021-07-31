@@ -3,11 +3,18 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Alegreya";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
+  /* background-image: url(./ss2.jpg); */
+  /* background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center center; optional, center the image */
+}
+/* body,
+html {
+  height: 100%;
+} */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: "Alegreya";
 }
 
 footer {
@@ -21,7 +28,7 @@ footer {
   justify-content: center;
 }
 
-nav {
+header {
   display: flex;
   position: fixed;
   top: 0;
@@ -29,6 +36,7 @@ nav {
 
   overflow: auto;
   height: auto;
+  background-color: #450168;
 }
 .left-links {
   flex: 1 1 200px;
@@ -41,4 +49,33 @@ nav {
   text-decoration: none;
   font-size: 17px;
   font-weight: bolder;
+}
+.copyright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+.jumbotronText {
+  font-weight: 400;
+  font-size: 2em;
+  color: #450168;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.jumbotronText h1 {
+  font-weight: 800;
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.jumbotronText p {
+  margin: 0;
+}
+
+.contact {
+  background-image: url("./ss2.jpg");
+  height: 400px;
 }

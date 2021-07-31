@@ -1,31 +1,29 @@
 import React from "react";
 
-function Navigation() {
+function Navigation(props) {
   return (
     <section>
- 
-      <nav>
-        <div class="left-links">
-          <a class="links" href="#">
-            {" "}
+      <header>
+        <div className="left-links">
+          <a className="links" href="#rachelsolov">
             Rachel Solov
           </a>
         </div>
-        <div class="right-links">
-          <a class="links" href="#">
+        <div className="right-links">
+          <a className="links" onClick={props.changeAbout}>
             About Me
           </a>
-          <a class="links" href="#">
+          <a className="links" onClick={props.changePort}>
             Portfolio
           </a>
-          <a class="links" href="#">
+          <a className="links" href="#contact-form">
             Contact
           </a>
-          <a class="links" href="#">
+          <a className="links" href="#resume">
             Resume
           </a>
         </div>
-      </nav>
+      </header>
     </section>
   );
 }
