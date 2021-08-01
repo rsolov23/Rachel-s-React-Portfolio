@@ -1,8 +1,9 @@
-import React from "react";
-// import Navigation from "../Navigation";
+import React, { useState } from "react";
+import Navigation from "../Navigation";
 import backgroundVideo from "./video.mp4";
 
 function Header() {
+  const [currentPage, handlePageChange] = useState("About");
   return (
     <div className="jumbotron">
       <div className="jumbotron-text">
@@ -23,6 +24,10 @@ function Header() {
                   aria-hidden="true"
                 ></i>
               </a>
+              <Navigation
+                currentPage={currentPage}
+                handlePageChange={handlePageChange}
+              />
             </span>
           </div>
         </div>
