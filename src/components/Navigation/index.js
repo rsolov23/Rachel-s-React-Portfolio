@@ -4,12 +4,7 @@ function Navigation(props) {
   return (
     <section>
       <header>
-        <div className="left-links">
-          <a className="links" href="#rachelsolov">
-            Rachel Solov
-          </a>
-        </div>
-        <div className="right-links">
+        <div className="links">
           <a className="links" onClick={props.changeAbout}>
             About Me
           </a>

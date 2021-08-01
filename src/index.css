@@ -1,19 +1,19 @@
-body {
+/* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Alegreya";
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; */
 
-  /* background-image: url(./ss2.jpg); */
-  /* background-size: cover; 
+/* background-image: url(./ss2.jpg); */
+/* background-size: cover; 
   background-repeat: no-repeat;
   background-position: center center; optional, center the image */
-}
+
 /* body,
 html {
   height: 100%;
 } */
-code {
+* {
   font-family: "Alegreya";
 }
 
@@ -30,24 +30,24 @@ footer {
 
 header {
   display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
   width: 100%;
 
   overflow: auto;
   height: auto;
-  background-color: #450168;
+  /* background-color: #450168; */
 }
-.left-links {
-  flex: 1 1 200px;
-}
+
 .links {
-  display: inline-block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+
   padding: 14px;
   color: rgb(0, 0, 0);
   text-decoration: none;
-  font-size: 17px;
+  font-size: 25px;
   font-weight: bolder;
 }
 .copyright {
@@ -57,25 +57,117 @@ header {
   font-size: 18px;
 }
 
-.jumbotronText {
-  font-weight: 400;
-  font-size: 2em;
-  color: #450168;
-  text-align: center;
-  padding-top: 150px;
+/*JUMBOTRON*/
+.jumbotron {
+  height: 100vh; /*height to 100% of view height*/
+
+  /* background: var(--gradient);
+  background: url(../images/gradient-bkgrnd.png) ;  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  /* font-size: 1.5em; */
 }
 
-.jumbotronText h1 {
+.jumbotron-text {
+  /*TAGLINE UNDER NAME*/
+  font-weight: 400;
+  font-size: 2em;
+  color: black;
+  text-align: center;
+  /* padding-top: 150px; */
+}
+
+/* .jumbotron-text h1 {
   font-weight: 800;
   font-size: 3em;
   margin-bottom: 0;
 }
 
-.jumbotronText p {
+.jumbotron-text p {
   margin: 0;
-}
+} */
 
-.contact {
+/* .contact {
   background-image: url("./ss2.jpg");
   height: 400px;
+} */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#container {
+  max-width: 300px;
+
+  /* Center the container in middle on horizontal axis */
+  margin: 0 auto;
+
+  /* Add empty space above the container (20% of the view height) */
+  margin-top: 20vh;
+}
+.card {
+  /* Change background color */
+  background-color: white;
+
+  /* Add border */
+  border: 1px solid #bacdd8;
+
+  /* Add space between the border and the content */
+  padding: 8px;
+
+  border-radius: 12px;
+}
+
+form {
+  text-align: center;
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+input:focus {
+  border: 1px solid var(--secondary);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+li {
+  list-style: none;
+}
+
+.resume,
+.contact {
+  margin: 100px 100px 100px 100px;
+  outline: 0.25px solid black;
+  text-align: center;
+  padding: 70px 0;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
+}
+
+form {
+}
+/* 
+.resumeMargin {
+  text-align: center;
+} */
+
+.skills {
+  padding-top: 70px;
 }

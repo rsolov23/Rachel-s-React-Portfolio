@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
-// import Header from "./components/Header";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Projects from "./components/Projects";
 import ContactForm from "./components/Contact";
-// import About from "./components/About";
+import About from "./components/About";
 import Resume from "./components/Resume";
 import Section from "./components/Section";
 
@@ -22,24 +22,24 @@ function App() {
     e.preventDefault();
     setPageLoad("Portfolio");
   };
-  // const changePageContact = (e) => {
-  //   e.preventDefault();
-  //   setPageLoad("Contact");
-  // };
-  // const changePageResume = (e) => {
-  //   e.preventDefault();
-  //   setPageLoad("Resume");
-  // };
+  const changePageContact = (e) => {
+    e.preventDefault();
+    setPageLoad("Contact");
+  };
+  const changePageResume = (e) => {
+    e.preventDefault();
+    setPageLoad("Resume");
+  };
 
   return (
     <main>
+      <Header></Header>
       <Navigation changeAbout={changePage} changePort={changePagePort} />
-      {/* <Header></Header> */}
 
       <Section section={pageLoad} />
 
-      {/* <About></About> */}
-      {/* <Projects></Projects> */}
+      <About></About>
+      <Projects></Projects>
       <ContactForm></ContactForm>
       <Resume></Resume>
       <Footer></Footer>
