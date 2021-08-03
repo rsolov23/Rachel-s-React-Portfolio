@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 
 import { validateEmail } from "../../utils/helper";
+import backgroundVideo from "../Pages/video.mp4";
 
 function ContactForm() {
+  <video autoPlay loop muted id="video">
+    <source src={backgroundVideo} type="video/mp4" />
+  </video>;
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -45,7 +49,9 @@ function ContactForm() {
       <h1 data-testid="h1tag">Contact me</h1>
       <form id="contact-form" className="form" onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name:</label>
+          <label htmlFor="name" placeholder="Name">
+            Name:
+          </label>
           <input
             type="text"
             name="name"
@@ -54,7 +60,9 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="email">Email address:</label>
+          <label htmlFor="email" placeholder="Email Address">
+            Email:
+          </label>
           <input
             type="email"
             name="email"
@@ -63,7 +71,9 @@ function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="message">Message:</label>
+          <label htmlFor="message" placeholder="Message">
+            Message:
+          </label>
           <textarea
             name="message"
             rows="5"
@@ -77,7 +87,9 @@ function ContactForm() {
           </div>
         )}
         <button data-testid="button" type="submit">
-          Submit
+          <div className="box-3">
+            <div className="btn btn-three">Submit</div>
+          </div>
         </button>
       </form>
     </section>

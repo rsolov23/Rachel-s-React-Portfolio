@@ -7,7 +7,6 @@ import Projects from "./components/Pages/Portfolio";
 import ContactForm from "./components/Pages/Contact";
 import About from "./components/Pages/About";
 import Resume from "./components/Pages/Resume";
-// import Section from "./components/Section";
 
 function App() {
   const [currentPage, handlePageChange] = useState("About");
@@ -23,6 +22,7 @@ function App() {
         return <About />;
     }
   };
+  console.log(renderPage);
   return (
     <div>
       <Header />
@@ -30,7 +30,7 @@ function App() {
         currentPage={currentPage}
         handlePageChange={handlePageChange}
       />
-      <div>{renderPage(currentPage)}</div>
+      <div>{renderPage()}</div>
       <Footer />
     </div>
   );

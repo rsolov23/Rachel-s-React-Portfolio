@@ -1,31 +1,24 @@
 import React from "react";
-// import coverImage from "./ss2.jpg";
-// import backgroundVideo from "./video.mp4";
+import profileImage from "../Projects/images/ss34png.png";
 function About() {
   return (
-    <section className="my-5">
-      {/* <video autoPlay loop muted id="video">
-        <source src={backgroundVideo} type="video/mp4" />
-      </video> */}
-      {/* <img
-        src={coverImage}
-        className="my-2"
-        style={{ width: "100%" }}
-        alt="cover"
-      /> */}
+    <section className="my-5" id="about">
+      <div className="about">
+        <img src={profileImage} />
+        <div>
+          <span className="title">Rachel Solov</span>
+        </div>
 
-      <h1>Rachel Solov</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec bibendum
-        turpis sed ex condimentum molestie. Mauris condimentum lectus ut ornare
-        dignissim. Mauris faucibus urna mi, ac feugiat metus aliquam maximus.
-        Proin aliquam justo nec diam vulputate vestibulum. Aenean sollicitudin
-        nulla at nisi ornare, nec suscipit massa eleifend. Morbi tristique justo
-        vel turpis sollicitudin, et tristique velit convallis. In hac habitasse
-        platea dictumst. Phasellus mattis nunc sed orci consequat laoreet.
-        Praesent id nisl nibh. Curabitur imperdiet ultricies mollis. In hac
-        habitasse platea dictumst.
-      </p>
+        <p>
+          I am a Full Stack Web Developer. I am currently enjoying the rigorous
+          fast-paced Coding Boot Camp at the University of Texas. I am a
+          motivated, creative, and dependable individual. I thrive when handling
+          multiple tasks on a daily basis competently and I work well under
+          pressure. In my free time I enjoy spending time in the outdoors with
+          my two dogs, attending concerts, and spending time with my
+          grandfather.
+        </p>
+      </div>
     </section>
   );
 }
