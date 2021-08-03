@@ -16,10 +16,8 @@ function Resume() {
         <h1 className="resumeMargin">Resume</h1>
         <a
           id="download"
-          href={
-            require(`../Pages/images/portfolioresume-converted.pdf`).default
-          }
-          download="portfolioresume-converted.pdf"
+          href={require(`../Pages/images/portfolio.pdf`).default}
+          download="portfolio.pdf"
           target="_blank"
           rel="noreferrer"
         >
