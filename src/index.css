@@ -13,6 +13,17 @@ body {
 a {
   margin: 25px;
 }
+h1,
+h2,
+a {
+  text-shadow: 1px 1px 1px #000, 1.5px 1.5px 2.5px #4a4949;
+  text-decoration: none;
+}
+.about,
+label {
+  font-size: 20px;
+  font-weight: bold;
+}
 /* header style */
 header {
   display: flex;
@@ -78,7 +89,7 @@ section.contact {
 
 form,
 .info,
-#projects,
+projects,
 .about {
   animation-duration: 3s;
   animation-name: slidein;

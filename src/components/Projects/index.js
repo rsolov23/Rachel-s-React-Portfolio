@@ -1,11 +1,9 @@
 import React from "react";
 
-
-
 function Projects() {
   return (
-    <section class="page-section" id="work">
-      <div class="flex-container">
+    <section className="page-section" id="work">
+      <div className="flex-container about">
         <a
           href="https://jotitgood.herokuapp.com/"
           target="blank"
