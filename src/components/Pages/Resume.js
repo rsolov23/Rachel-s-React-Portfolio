@@ -30,11 +30,11 @@ function Resume() {
             <img src={htmlImage} style={{ padding: "10px" }} />
             <img src={cssImage} style={{ padding: "10px" }} />
             <img src={jsImage} style={{ padding: "10px" }} />
-            <img src={reactImage} style={{ padding: "10px" }} />
             <img src={mongoImage} style={{ padding: "10px" }} />
-            <img src={mysqlImage} style={{ padding: "10px" }} />
-            <img src={nodeImage} style={{ padding: "10px" }} />
             <img src={expressImage} style={{ padding: "10px" }} />
+            <img src={reactImage} style={{ padding: "10px" }} />
+            <img src={nodeImage} style={{ padding: "10px" }} />
+            <img src={mysqlImage} style={{ padding: "10px" }} />
             <img src={npmImage} style={{ padding: "10px" }} />
             <img src={gitImage} style={{ padding: "10px" }} />
           </div>
