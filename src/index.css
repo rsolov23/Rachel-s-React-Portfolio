@@ -11,18 +11,16 @@ body {
   height: 100vh;
   object-fit: fill;
 }
-/* space under nav */
 a {
   margin: 25px;
 }
-/* style for text */
 h1,
 h2,
 a {
   text-shadow: 1px 1px 1px #000, 1.5px 1.5px 2.5px #4a4949;
   text-decoration: none;
 }
-/* style for about section */
+
 .about,
 label {
   font-size: 20px;
@@ -45,7 +43,7 @@ header {
 section.contact {
   display: flex-end;
   justify-content: end;
-
+  /* background-color: #e7e7e8; */
   margin: 100px 100px 100px 100px;
   outline: 0.25px solid black;
   text-align: center;
@@ -89,6 +87,9 @@ form,
     width: 100%;
   }
 }
+/* form {
+  margin-left: auto;
+} */
 
 /* about image */
 #about {
@@ -99,7 +100,17 @@ form,
   padding-left: 6em;
   padding-right: 6em;
 }
-/* style for cards */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+
+/* Design */
+/* *,
+*::before,
+*::after {
+  box-sizing: border-box;
+} */
+
 .main {
   margin-top: 8%;
 }
@@ -148,6 +159,18 @@ img {
   padding: 1rem;
 }
 
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
 .card {
   opacity: 95%;
   border-radius: 0.25rem;
@@ -192,7 +215,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/* nav style */
 .links {
   position: fixed;
   top: 0;
@@ -209,8 +231,59 @@ body {
   font-size: 25px;
   font-weight: bolder;
 }
+.copyright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
 
-/* contact input text area */
+/*JUMBOTRON*/
+.jumbotron {
+  height: 100vh; /*height to 100% of view height*/
+
+  /* background: var(--gradient);
+  background: url(../images/gradient-bkgrnd.png) ;  */
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  /* font-size: 1.5em; */
+}
+
+.jumbotron-text {
+  /*TAGLINE UNDER NAME*/
+  font-weight: 400;
+  font-size: 2em;
+  color: #3e3f43;
+  text-align: center;
+  /* padding-top: 150px; */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#container {
+  max-width: 300px;
+
+  /* Center the container in middle on horizontal axis */
+  margin: 0 auto;
+
+  /* Add empty space above the container (20% of the view height) */
+  margin-top: 20vh;
+}
+
+/*  */
 textarea {
   width: 175px;
 }
@@ -278,7 +351,6 @@ input:focus {
 li {
   list-style: none;
 }
-/* box style */
 .resume,
 .contact,
 .my-5 {
@@ -293,12 +365,6 @@ li {
   padding-top: 70px;
 }
 /* footer style */
-.copyright {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-  font-size: 18px;
-}
 .container {
   display: flex;
   justify-content: center;
@@ -310,16 +376,5 @@ footer {
   bottom: 0px;
   height: 50px;
   width: 100%;
-  padding-bottom: 25px !important;
-}
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
+  padding-bottom: 25px;
 }
