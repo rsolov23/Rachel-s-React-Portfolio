@@ -20,7 +20,7 @@
 
 ### **Link to my Portfolio**
 
-🔹 https://rsolov23.github.io/Rachel-s-React-Portfolio/
+🔹 https://gentle-taiga-68367.herokuapp.com/
 
 ### **Contribution**
 

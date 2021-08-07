@@ -10,8 +10,8 @@ function Projects() {
   return (
     // <section className="page-section" id="work">
 
-    <div className="main" style={{ position: "relative" }}>
-      <ul className="cards" style={{ position: "absolute" }}>
+    <div className="main">
+      <ul className="cards">
         <li className="cards_item">
           <div className="card">
             <div className="card_image">
