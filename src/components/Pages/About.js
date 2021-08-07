@@ -10,7 +10,7 @@ function About() {
         </div>
 
         <p>
-          I am a Full Stack Web Developer. I am currently enjoying the rigorous
+          I am a Full Stack Web Developer currently enjoying the rigorous
           fast-paced Coding Boot Camp at the University of Texas. I am a
           motivated, creative, and dependable individual. I thrive when handling
           multiple tasks on a daily basis competently and I work well under
