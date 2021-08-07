@@ -1,12 +1,8 @@
 import React, { useState } from "react";
 
 import { validateEmail } from "../../utils/helper";
-import backgroundVideo from "../Pages/video.mp4";
 
 function ContactForm() {
-  <video autoPlay loop muted id="video">
-    <source src={backgroundVideo} type="video/mp4" />
-  </video>;
   const [formState, setFormState] = useState({
     name: "",
     email: "",
